@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url(mesmerizing-view-calm-ocean-trees-shore-during-sunset-indonesia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgb(255, 255, 255, 0.2);
+    transition: width 0.3sec ease;
+
+}
+
+.sidebar:hover {
+    width: 210px;
+}
+
+.sidebar .logo {
+    display: flex;
+    /* align-items: center; */
+    padding: 10px 10px 10px;
+}
+
+.logo h2 {
+    font-weight: 600;
+    font-size: 1, 15rem;
+    margin-left: 12px;
+    display: none;
+}
+
+.sidebar:hover h2 {
+    display: inline;
+    text-shadow: 0px 0px 3px #12b1d1;
+}
+
+
+.sidebar .links {
+    height: calc(100%-140px);
+    overflow-y: scroll;
+    scrollbar-width: 20px;
+    list-style: none;
+    margin-top: 20px;
+    text-align: justify;
+
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: contents;
+    width: 10px;
+    height: 10px;
+}
+
+/* .sidebar .links::-webkit-scrollbar-thumb{
+        background-color: #ccc;
+    }
+    .sidebar .links::-webkit-scrollbar-track{
+        background-color: #fff;
+     
+    } */
+.sidebar .links h4 {
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: none;
+    padding-left: 20px;
+
+}
+
+.sidebar:hover .links h4 {
+    display: flex;
+
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li:hover {
+    background: #996e6e8a;
+    border-radius: 10px;
+    cursor: pointer;
+    /* color: rgb(48, 202, 17); */
+}
+
+.links hr {
+    border-color: #4c4c4c;
+    margin: 10px 8px;
+}
+
+.sidebar:hover .links hr {
+
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+
+}
+
+.links li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    white-space: nowrap;
+    display: none;
+
+}
+
+.sidebar:hover .links li a {
+    display: block;
+}
